@@ -1,11 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 .body{
-    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .first-container{
-    background-image: url("../assets/presentation.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("../assets/presentation.jpg");
+    background-color: black;
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment:local;
@@ -14,8 +23,19 @@
     margin: 0%;  
     display: flex;
 }
+
 .bar{
-    height:100px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    pointer-events: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -26,35 +46,123 @@ ul {
   
   li {
     display: inline;
+    flex-wrap: wrap;
   }
   
+.title-logo{
+    display: inline-block;
+    max-width: 100%;
+    max-height: 80px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    pointer-events: auto;
+}
+
   .list1{
       color: white;
+      padding-top: 0.1em;
+    padding-right: 20px;
+    padding-bottom: 0.1em;
+    padding-left: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
   }
   .bar-info{
     position: absolute;
     top: 8px;
     right: 16px;
+    padding-right: 80px;
   }
+
+  .empower-youth{
+    position: absolute;
+    bottom: 20%; 
+    padding-left: 70px;
+    font-size: xx-large;
+    display: auto;
+  }
+
+  .nav-bar{
+    text-align: right;
+    margin-left: auto;
+    padding-left: 2.2vw;
+  }
+
+  .button{
+    color: #fff;
+    background-color: #18ea19;
+    border-color: #18ea19;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    line-height: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: calc((1.1 - 1) * 1.2vw + 1rem);
+    margin-top: 20px;
+    padding: 8px;
+  }
+  
+
+  .first-title{
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 70px;
+      display:auto;
+      font-weight: 600;
+      
+      font-style: normal;
+      letter-spacing: 0em;
+      text-transform: none;
+  }
+
+.paras{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
 .second-container{
-    height: 400px;
-    width: 70%;
+    width:100%;
+    height:400px;
+    margin-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    ##justify-content: space-around;
     display: flex;
-    justify-content: space-evenly;
-    padding-left: 20%;
-    margin-top: 30px;
-    flex-basis: 33.3%;
+    text-align: center;
+    margin-left: 300px;
 }
 .emplyement{
+    text-align: left;
     width: 25%;
+    flex-basis: 33.3%;
+    padding-left: 150px;
 }
 .youth-trained{
     justify-content: center;
+    padding-left: 150px;
     width: 25%;
+    flex-basis: 33.3%;
 }
 .partners{
-    padding-right: 20%;
     width: 25%;
+    flex-basis: 33.3%;
+    text-align: end;
 }
 .para{
 text-align: center;
@@ -63,25 +171,43 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 }
 .third-container{
-    margin-top: 50px;
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
     flex-basis: 50%;
     width:100%;
     height:400px;
     flex: auto;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    
+    
 }
+.chatting-image1{
+    height: 500px;
+    width: 700px;
+    padding-left: 30px;
+    flex-basis: 50%;
+
+}
+.next-column{
+    flex-basis: 50%;
+    padding-left: 150px;
+}
+
 h1{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .first-col{
     position: relative;
+    padding-bottom: 66.6%;
 }
 
 .skills{
     font-size: calc((3 - 1) * 1.2vw + 1rem);
     font-weight: 400;
     font-style: normal;
+
 }
 .para-2{
     font-size: calc((1.6 - 1) * 1.2vw + 1rem);
@@ -90,4 +216,453 @@ h1{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+.fourth-container{
+    margin-top: 200px;
+    display: flex;
+    background-color: #18ea19;
+    width: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+
+}
+.head{
+    margin-top: 2rem;
+    margin-right: 0px;
+    margin-bottom: 2rem;
+    margin-left: 0px;
+}
+
+.two-image{
+    padding-top: 100px;
+}
+
+.fifth-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    width:100%;
+    height:400px;
+    flex: auto;
+    
+}
+.sixth-container{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    width:100%;
+    height:300px;
+    flex: auto;
+    justify-content:center ;
+    flex-wrap: wrap;
+}
+.skills-2
+{
+        font-size: 3vw;
+        font-weight: 400;
+        font-style: normal;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.under-six{
+    width: 100%;
+}
+.seventh-container{
+    background-color: #ddddd9;
+    width:100%;
+    height:500px;
+    flex-wrap: wrap;
+    align-content: stretch;
+    
+}
+.first-row{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-left: 100px;
+    margin-top: 90px;
+    
+}
+
+.modify{
+    width: 80%;
+    height: 130px;
+    display: flex;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.second-row{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-left: 100px;
+}
+.main-div{
+    text-align: center;
+}
+.container-eight{
+    flex-direction: column;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.subscription{
+    background-color: #ddddd9;
+    width:100%;
+    height:300px;
+    
+}
+
+
+.donor{
+    width: auto;
+    height: 700px;
+    display: flex;
+    object-fit: scale-down;
+    
+}
+
+
+
+
+.subscription-button{
+  background-color: #000000;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  height: 50px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 17px ;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 30px;
+}
+
+.final-container{
+    background-color: #000000;
+    width:100%;
+    height:100px;
+    margin-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    padding: 30px;
+}
+.policy{
+    flex-basis: 33.3%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: larger;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.copyright{
+    flex-basis: 33.3%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.icons{
+    text-align: end;
+    flex-basis: 33.3%;   
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+@media (max-width:1100px) {
+    body{font-size: 3px;}
+    h1{
+      font-size: 15px;
+    }
+    .p{
+      font-size: 3px;
+    }
+    .first-container{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("../assets/presentation.jpg");
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment:local;
+        width: 100vw;
+        height: 100vh; 
+        margin: 0%;  
+        display: block;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: initial;
+        
+    }
+    
+    .empower
+    {
+      position: absolute;
+      bottom: 20%; 
+      padding-left: 30px;
+      font-size: calc(100% + 1vw + 1vh);
+      color: white;
+     
+    }
+    .next-column{
+      margin-top: 200px;
+      margin-left: 5px;
+    }
+    .navbar {
+        position: absolute !important;
+        text-align: end;
+        width: 100%;
+        transition: all .5s;
+        flex-direction: column;
+      }
+      .bar-info{
+          flex-direction: column;
+      }
+
+      .navbar{
+       
+        margin-left: auto;
+        padding-left: 55.2vw;
+      }
+      .bar{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-left: 7vw;
+        padding-right: 4vw;
+        pointer-events: auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    .third-container{
+      margin-top: 50px;
+      margin-left: 5px;
+      top: -150px;
+    }
+    .fourth-container{
+      margin-top: 200px;
+    }
+    .button{
+        padding-left: 10px;
+    }
+    .chatting-image1{
+      height: 30vh;
+      width: 100vw;
+      padding-left: 5px;
+      margin-top: 30px;
+      
+    }
+
+   
+
+    .para-2{
+      font-size: 10px;
+    }
+    .para-3{
+      font-size: 1px;
+    }
+    .sixth-container{
+      margin-top: 300px;
+    }
+    .mid-container{
+      padding-top: 5px;
+      margin-top: 0px;
+    }
+    .first-row{
+      flex-direction: column;
+      margin-top: 20px;
+      padding-left: 10px;
+    }
+    .second-row{
+      flex-direction: column;
+      margin-top: 180px;
+      padding-left: 10px;
+    }
+    .container-eight{
+      margin-top: 300px;
+    }
+    .skills-2{
+      font-size: 20px;
+    }
+    .modify{
+      width: 100%;
+    }
+    .seventh-container{
+      height: 650px;
+    }
+    .container-eight{
+      margin-top: 10px;
+    }
+   
+    .private{
+      font-size: large;
+      justify-content: flex-start;
+    }
+    .copyright{
+      font-size: large;
+  
+    }
+    .final-container{
+      flex-wrap: wrap;
+      flex-direction: column;
+      height:500px;
+      flex-basis: 33.3%;
+      max-width:100%;
+      margin-top: 78px;
+      
+    }
+   .fa-linkedin,.fa-facebook,.fa-instagram,.fa-twitter{
+      font-size: small;
+   }
+   .copyright{
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top: 10px;
+   }
+   .icons{
+     padding-left: 3px;
+     flex-wrap: nowrap;
+   }
+   .subscription{
+       padding: 7px;
+   }
+   .responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .responsive-1{
+    width: 400px;
+    max-width: 280px;
+    height: 600px;
+    padding-left: 2px;
+    padding-top: 22px;
+    
+  }
+  .fourth-container{
+      flex-direction: column;
+  }
+  .discover{
+      font-size: 3pxs;
+  }
+  .two-image{
+      padding-top: 5px;
+  }
+  .first-container{
+    background-attachment: local;    
+}
+  .empower-youth{
+      padding-left: 30px;
+  }
+  .first-title{
+      font-size: 20px ;
+  }
+  .paras{
+      font-size: 10px;
+  }
+  .button{
+      font-size: medium;
+      padding: 0px;
+  }
+
+  .second-container{
+      flex-direction: column;
+      height:fit-content ;
+  }
+  .emplyement, .youth-trained,.partners{
+      flex-direction: column;
+      
+  }
+  .youth-trained>h1{
+      padding-left: 10px;
+  }
+    .para{
+    padding-left: 60px;
+  } 
+
+  .youth-trained,.partners{
+      padding-left: 100px;
+  }
+
+  .para,.h1{
+      padding-left: 5px;
+      
+      font-size: large;
+  }
+  .third-container,.fifth-container{
+      margin-top: 0px;
+      flex-direction: column;   
+      height: fit-content;
+      max-width: fit-content;
+      
+  }
+  .list1{
+    font-size: 13px;
+    text-align: center;
+ 
+  }
+ .bar-info{
+     flex-direction: column;
+ }
+ 
+  .button{
+    font-size: 13px;
+    padding: 7px;
+    margin-left: 15px;
+  }
+
+  .next-column{
+      padding-left: 2px;
+      margin-top: 0px;
+      padding-top: 2px;
+  }
+  .modify{
+    flex-direction: column;
+    
+  }
+  .Strategic-Partners{
+      height: 500px;
+      
+  }
+  .private{
+      font-size: 15px;
+  }
+  .policy{
+     justify-content: flex-start; 
+  }
+  .copyright-2{
+      font-size: 15px;
+  }
+  .final-container{
+      width: 100%;
+  }
 }
