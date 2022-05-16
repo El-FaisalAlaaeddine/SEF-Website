@@ -13,7 +13,7 @@
 }
 
 .first-container{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("../assets/presentation.JPG");
+    background-image: url("../assets/presentation.JPG");
     background-color: black;
     background-repeat: no-repeat;
     background-size: 100%;
